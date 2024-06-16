@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta etiquetas esenciales -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuck Norris Jokes</title>
+  <!-- Incluir Bootstrap 5 desde CDN para estilos -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilo personalizado para centrar la tarjeta verticalmente */
+    .center-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor principal de Bootstrap con margen superior -->
+  <div class="container center-card">
+    <!-- Tarjeta centrada -->
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.ebayimg.com/images/g/ob4AAOSwX3FbFxkV/s-l1600.jpg" class="card-img-top" >
+      <div class="card-body text-center">
+        <!-- Título principal -->
+        <h5 class="card-title">Chuck Norris Jokes</h5>
+        <!-- Botón para obtener un chiste -->
+        <button id="getJokeBtn" class="btn btn-primary mt-3">Get a Joke</button>
+        <!-- Contenedor para mostrar el chiste -->
+        <p id="jokeText" class="card-text lead mt-4"></p>
+      </div>
+    </div>
+  </div>
+  <!-- Incluir archivo JavaScript -->
+  <script src="chuck.js"></script>
+</body>
+</html>
